@@ -1,8 +1,4 @@
-from PyQt5 import QtWidgets
-from PyQt5.QtWidgets import QApplication, QMainWindow
-
-import sys
-
+from controller import notesApp
 
 
 if __name__ == "__main__":
