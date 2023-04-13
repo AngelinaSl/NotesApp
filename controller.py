@@ -16,7 +16,7 @@ def notesApp():
             case '1':
                 notes_param.append(add_note())
                 save_notes(file, notes_param)
-                print(Fore.GREEN + '✔ Заметка добавлена ✔'+ '\033[39m')
+                print(Fore.GREEN + '✔ Заметка добавлена ✔' + '\033[39m')
             case '2':
                 list_notes(notes_param)
             case '3':

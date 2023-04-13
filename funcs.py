@@ -50,16 +50,17 @@ def get_index(notes, text):
         print(Fore.RED + '⚠ Ошибка исполнения. Нужен номер записи. ⚠'+ '\033[39m')
 
 
+# получение количества записей
 def get_length_notes(notes):
-    # получение количества записей
     length_notes = len(notes)
     return length_notes
 
 
+# фильтрация заметок по дате
 def filter_notes(notes, start_date, end_date):
-    # фильтрация заметок по дате
     filtered_notes = list(filter(lambda note: start_date <= note['date'] <= end_date, notes))
     return filtered_notes
+
 
 def get_value(text_value):
     while True:
@@ -68,6 +69,7 @@ def get_value(text_value):
             return value
         except Exception:
             print(Fore.RED + '⚠ Ошибка даты ⚠'+ '\033[39m')
+
 def get_datatime(text):
     print(text)
     while True:

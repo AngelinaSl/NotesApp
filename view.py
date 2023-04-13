@@ -18,7 +18,7 @@ def menu_printing():
 
 def decorator_table(func):
     def wrapper(*args, **kwargs):
-        print(' ')
+        print('  ')
         table_print()
         func(*args, **kwargs)
         end_table_print()
